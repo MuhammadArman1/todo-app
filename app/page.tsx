@@ -6,7 +6,7 @@ interface Task {
   desc: string;
 }
 
-export default function page() {
+export default function Page() {
 
   const [task, settask] = useState("");
   const [desc, setdesc] = useState("");
@@ -43,7 +43,7 @@ export default function page() {
   
   return (
     <div>
-      
+
       <header className="bg-white h-16 flex justify-center items-center gap-28">
         <h1 className="font-bold text-black text-4xl">TODO APP!</h1>
         <i className="font-bold text-blue-500 text-4xl">MUHAMMAD ARMAN &nbsp;</i>
