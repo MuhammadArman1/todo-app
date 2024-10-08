@@ -44,7 +44,7 @@ export default function Page() {
   return (
     <div>
 
-      <header className="bg-white h-16 flex justify-center items-center gap-28">
+      <header className="bg-blue-200 h-16 flex justify-center items-center gap-28">
         <h1 className="font-bold text-black text-4xl">TODO APP!</h1>
         <i className="font-bold text-blue-500 text-4xl">MUHAMMAD ARMAN &nbsp;</i>
       </header>
@@ -52,6 +52,7 @@ export default function Page() {
       <form className=" flex justify-center m-16" onSubmit={submitHandler}>
         <input
           className="text-2xl border-blue-400 border-4 rounded-lg px-4 py-2 m-8 text-black"
+          required
           type="text"
           placeholder="Enter Task Here"
           value={task}
@@ -59,8 +60,9 @@ export default function Page() {
             settask(e.target.value);
           }}
         />
-        <input
+        <input id="desc"
           className="text-2xl border-blue-400 border-4 rounded-lg px-4 py-2 m-8 text-black"
+          required
           type="text"
           placeholder="Enter Description Here"
           value={desc}
@@ -68,7 +70,7 @@ export default function Page() {
             setdesc(e.target.value);
           }}
         />
-        <button className="px-5 py-2 m-8 rounded-lg text-xl text-white font-bold border-blue-300 border-4 hover:bg-sky-300">
+        <button className="px-5 py-2 m-8 rounded-lg text-xl text-black font-bold border-blue-300 border-4 hover:bg-sky-300">
           Add Task
         </button>
       </form>
