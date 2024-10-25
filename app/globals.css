@@ -14,17 +14,44 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width:600px) and (max-width:900px){
+  body{
+    width: 600px;
+    display: flex;
+    align-items: center;
+  }
+  form{
+    flex-direction: column;
+    width: 80vw;
+    margin-right: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px black;
+  }
+  input{
+    width: 70vw;
+  }
+  button{
+    background-color: rgb(147 197 253 )
   }
 }
-button{
-  transition: 0.8s;
+@media (min-width:300px) and (max-width:600px){
+  body{
+    width: 300px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; 
+  }
+  header{
+    width: 100%;
+  }
+  form{
+    flex-direction: column;
+    width: 90vw;
+    margin-right: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px black;
+  }
+  button{
+    background-color: rgb(147 197 253 )
+  }
 }
